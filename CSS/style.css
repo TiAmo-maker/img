@@ -1,0 +1,46 @@
+/*设置标题样式*/
+h1 {
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+}
+
+/*设置缩略图栏的样式。*/
+body {
+    width: 640px;
+    margin: 0 auto;
+}
+/*设置大图片样式*/ 
+.full-img {
+    position: relative;/*设置为相对定位*/
+    display: block;
+    width: 64px;
+    height: 480px;
+}
+
+/*设置底部预览图片样式*/
+.overlay {
+    position: absolute;/*绝对定位*/
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+}
+  
+button {
+    border: 0;/*移除按钮的边框。*/
+    background: rgba(150,150,150,0.6);/*设置按钮的背景颜色*/
+    text-shadow: 1px 1px 1px white;/*为按钮文本添加阴影*/
+    border: 1px solid #999;/*为按钮添加边框*/
+    position: absolute;/*将按钮定位在页面上*/
+    cursor: pointer;/*将鼠标指针更改为手形，以指示用户可以点击该元素。*/
+    top: 2px;
+    left: 2px;
+}
+/*用于设置缩略图栏中每个img元素的样式。*/
+.thumb-bar img {
+    display: block;/*使img元素成为块级元素，使其占据整行。*/
+    width: 20%;/*设置img元素的宽度为20%。*/
+    float: left;/*使img元素向左浮动，使其排列在一行中。*/
+    cursor: pointer;/*将鼠标指针更改为手形，以指示用户可以点击该元素。*/
+}
